@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(253, 250, 145);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.nav h1 {
+  font-size: 4rem;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputs input {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.inputs label {
+  font-size: 1.65rem;
+}
+
+.caderno {
+  height: auto;
+  width: 70rem;
+  border: 5px solid black;
+  padding-bottom: 4rem;
+}
+
+.tit-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(253, 250, 145);
+}
+.tit-data h2 {
+  font-size: 5rem;
+}
+
+.tit-data h3 {
+  font-size: 1.5rem;
+}
+
+.tit-data p {
+  border-bottom: 1px solid black;
+  width: 150px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.tarefas {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  width: 100%;
+  gap: 20px;
+}
+
+.tarefas li {
+  width: 100%;
+  border-bottom: 2px solid black;
+  font-size: 1.75rem;
+  padding: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
+}
+
+.tarefas button {
+  border: none;
+  color: white;
+  background-color: rgb(35, 35, 180);
+  padding: 7px;
+  font-size: 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.def {
+  width: 5rem;
+  padding: 6px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  background-color: rgb(35, 35, 180);
+  cursor: pointer;
+}
+
+.criar {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.criar label {
+  font-size: 2rem;
+}
+
+.criar input[type="text"] {
+  width: 19rem;
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.criar button {
+  width: 6rem;
+  border-radius: 12px;
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(35, 35, 180);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.criar input[type="color"] {
+  border-radius: 7px;
+  height: 50px;
+  cursor: pointer;
+}
+
+ .color {
+  display: flex;
+  gap: 1.5rem;
+ }
+
+@media (max-width: 720px) {
+  body {
+    padding-bottom: 3rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 2rem;
+    margin-bottom: 0;
+  }
+
+  .nav h1 {
+    font-size: 2rem;
+  }
+
+  .inputs label {
+    font-size: 1.5rem;
+  }
+
+  .inputs {
+    order: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .inputs div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .inputs input {
+    width: 68%;
+  }
+
+  #data {
+    width: 95%;
+  }
+
+  .criar {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  .criar label {
+    font-size: 1.5rem;
+    order: 1;
+  }
+
+  .criar div {
+    display: flex;
+    width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .color {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+  }
+
+  .caderno {
+    width: 95%;
+  }
+
+  .caderno h2 {
+    font-size: 2rem;
+  }
+
+  .caderno h3 {
+    font-size: 1.25rem;
+  }
+
+  .tit-data div {
+    display: flex;
+  }
+
+  .tit-data div p {
+    font-size: 1.25rem;
+    width: 100px;
+  }
+
+  .caderno li {
+    font-size: 1.4rem;
+  }
+}
