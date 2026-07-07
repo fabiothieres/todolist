@@ -8,21 +8,24 @@
   </head>
   <body>
     <div class="nav">
-      <div class="inputs">
-        <label for="titulo">Definir título:</label>
-        <div>
-          <input type="text" id="titulo" />
-          <button class="def">Definir</button>
+      <button class="hamburger">☰</button>
+      <div class="menu-mobile">
+        <button class="fechar-menu">✕</button>
+        <div class="inputs">
+          <label for="titulo">Definir título:</label>
+          <div>
+            <input type="text" id="titulo" />
+            <button class="def">Definir</button>
+          </div>
+        </div>
+        <div class="inputs inputs-data">
+          <label for="data">Definir data:</label>
+          <input type="date" name="data" id="data" />
         </div>
       </div>
-
       <h1>To do list</h1>
-
-      <div class="inputs">
-        <label for="data">Definir data:</label>
-        <input type="date" name="data" id="data" />
-      </div>
     </div>
+    <div class="overlay"></div>
 
     <div class="criar">
       <label>Criar tarefa: </label>

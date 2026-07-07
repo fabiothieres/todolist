@@ -8,6 +8,27 @@ const fundo2 = document.querySelector(".nav");
 const titulo = document.querySelector("#tit-definido");
 const data = document.querySelector("#data");
 const dataAlterada = document.querySelector(".dataDef");
+const hamburger = document.querySelector(".hamburger");
+const menuMobile = document.querySelector(".menu-mobile");
+const fecharMenu = document.querySelector(".fechar-menu");
+const overlay = document.querySelector(".overlay");
+
+// sessão menu mobile
+
+hamburger.addEventListener("click", () => {
+  menuMobile.classList.toggle("aberto");
+  overlay.classList.toggle("aberto");
+});
+
+fecharMenu.addEventListener("click", () => {
+  menuMobile.classList.remove("aberto");
+  overlay.classList.remove("aberto");
+});
+
+overlay.addEventListener("click", () => {
+  menuMobile.classList.remove("aberto");
+  overlay.classList.remove("aberto");
+});
 
 // sessão data
 
@@ -23,6 +44,7 @@ data.addEventListener("change", (e) => {
 cor.addEventListener("change", (e) => {
   fundo1.style.backgroundColor = cor.value;
   fundo2.style.backgroundColor = cor.value;
+  menuMobile.style.backgroundColor = cor.value;
   const corEscolhida = cor.value;
   salvaCor(corEscolhida);
 });
@@ -39,6 +61,7 @@ function adcCorSalva() {
   const corEscolhida = JSON.parse(corSalva);
   fundo1.style.backgroundColor = corEscolhida;
   fundo2.style.backgroundColor = corEscolhida;
+  menuMobile.style.backgroundColor = corEscolhida;
   cor.value = corEscolhida;
 }
 
